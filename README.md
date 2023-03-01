@@ -1,5 +1,16 @@
 ## Nolus-rila Testnet SnapShot (01.03.23) - height - 1206000 - v0.1.43
-## How to install the snapshot (Instrustions - manual)
+## How to install the snapshot (Instrustions #1 - auto)
+
+## Autoscipt
+
+1. Run the commands,  if you are working under the 'root' user, otherwise add 'sudo' to each line
+```
+apt update && \
+apt install curl wget lz4 -y && \
+wget -O nls.sh https://raw.githubusercontent.com/serverum/nolus_snapshot/main/nls.sh && \
+chmod u+x nls.sh && sudo /bin/bash nls.sh
+```
+## How to install the snapshot (Instrustions #2 - manual)
 
 1. Stop the nolus service
 ```
@@ -33,13 +44,3 @@ mv $HOME/.nolus/priv_validator_state.json.backup $HOME/.nolus/data/priv_validato
 sudo systemctl start nolusd && sudo journalctl -u nolusd -f -o cat
 ```
 7. That's all.
-
-## Autoscipt
-
-1. Run the commands,  if you are working under the 'root' user, otherwise add 'sudo' to each line
-```
-apt update && \
-apt install curl wget lz4 -y && \
-wget -O nls.sh https://raw.githubusercontent.com/serverum/nolus_snapshot/main/nls.sh && \
-chmod u+x nls.sh && sudo /bin/bash nls.sh
-```
