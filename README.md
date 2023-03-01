@@ -1,7 +1,7 @@
 ## Nolus-rila Testnet SnapShot (01.03.23) - height - 1206000 - v0.1.43
 ### How to install the snapshot (Instrustions #1 - auto)
 
-## Autoscipt
+## Autoscript
 
 1. Run the commands,  if you are working under the *root* user, otherwise add *sudo* to each line
 ```
