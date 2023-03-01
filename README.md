@@ -1,5 +1,4 @@
-## Nolus-rila Testnet SnapShot (01.03.23)
-#### Nolus-rila testnet snapshot (01.03.23) height - 1206000
+## Nolus-rila Testnet SnapShot (01.03.23) - height - 1206000 - v0.1.43
 ## How to install the snapshot (Instrustions)
 
 1. Stop the nolus service & delete .data folder by commands
