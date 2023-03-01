@@ -11,7 +11,7 @@ cp $HOME/.nolus/data/priv_validator_state.json $HOME/.nolus/priv_validator_state
 ```
 3. Make sure you turn on snapshots in your $HOME/.nolus/congif/app.toml , if snapshot-interval=0 then try this
 ```
-snapshot_interval=1000 sed -i.bak -e "s/^snapshot-interval *=.*/snapshot-interval = \"$snapshot_interval\"/" ~/.nolus/config/app.toml
+snapshot_interval=1000 && sed -i.bak -e "s/^snapshot-interval *=.*/snapshot-interval = \"$snapshot_interval\"/" ~/.nolus/config/app.toml
 ```
 4. Remove $HOME/.nolus/data
 ```
