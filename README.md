@@ -17,6 +17,12 @@ snapshot_interval=1000 && sed -i.bak -e "s/^snapshot-interval *=.*/snapshot-inte
 ```
 rm -rf $HOME/.nolus/data
 ```
+5 Make sure you have curl wget lz4 installed, otherwise do install them this way
+```
+sudo apt update && \
+sudo apt install curl wget lz4 -y
+```
+
 5. Download and set the latest snapshot
 ```
 curl -L https://fnord.online/snap_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.nolus
@@ -30,7 +36,7 @@ sudo systemctl start nolusd && sudo journalctl -u nolusd -f -o cat
 
 ## Autoscipt
 
-1. Run the commands (make sure you have all of the packets installed)
+1. Run the commands,  if you are working under the 'root' user, otherwise add 'sudo' to each line
 ```
 apt update && \
 apt install curl wget lz4 -y && \
