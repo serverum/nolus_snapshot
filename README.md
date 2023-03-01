@@ -39,7 +39,7 @@ sudo apt install curl wget lz4 -y
 curl -L https://fnord.online/snap_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.nolus
 mv $HOME/.nolus/priv_validator_state.json.backup $HOME/.nolus/data/priv_validator_state.json
 ````
-6. Restart your node & check the logs
+6. Start your node & check the logs
 ```
 sudo systemctl start nolusd && sudo journalctl -u nolusd -f -o cat
 ```
