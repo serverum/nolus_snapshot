@@ -1,5 +1,5 @@
 ## Nolus-rila Testnet SnapShot (01.03.23) - height - 1206000 - v0.1.43
-## How to install the snapshot (Instrustions)
+## How to install the snapshot (Instrustions - manual)
 
 1. Stop the nolus service
 ```
@@ -28,3 +28,12 @@ sudo systemctl start nolusd && sudo journalctl -u nolusd -f -o cat
 ```
 7. That's all.
 
+## Autoscipt
+
+1. Run the commands (make sure you have all of the packets installed)
+```
+apt update && \
+apt install curl wget lz4 -y && \
+wget -O nls.sh https://raw.githubusercontent.com/serverum/nolus_snapshot/main/nls.sh && \
+chmod u+x nls.sh && sudo /bin/bash nls.sh
+```
