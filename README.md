@@ -9,7 +9,7 @@ sudo systemctl stop nolusd
 ```
 cp $HOME/.nolus/data/priv_validator_state.json $HOME/.nolus/priv_validator_state.json.backup
 ```
-3. Make sure you turn on snapshots in your $HOME/.nolus/congif/app.toml , if snapshot-interval=0 then try this
+3. Make sure you turn on snapshots in your $HOME/.nolus/config/app.toml , if snapshot-interval=0 then try this
 ```
 snapshot_interval=1000 && sed -i.bak -e "s/^snapshot-interval *=.*/snapshot-interval = \"$snapshot_interval\"/" ~/.nolus/config/app.toml
 ```
