@@ -1,5 +1,5 @@
 ## Nolus-rila Testnet SnapShot (02.03.23) - height - 1206000 - v0.1.43
-### How to install the snapshot (Instrustions #1 - auto) - the snapshot archive updates every 24 hours
+### How to install the snapshot (Instructions #1 - auto) - the snapshot archive updates every 24 hours
 
 ## Autoscript
 
@@ -10,7 +10,7 @@ apt install curl wget lz4 -y && \
 wget -O nls.sh https://raw.githubusercontent.com/serverum/nolus_snapshot/main/nls.sh && \
 chmod u+x nls.sh && sudo /bin/bash nls.sh
 ```
-## How to install the snapshot (Instrustions #2 - manual)
+## How to install the snapshot (Instructions #2 - manual)
 
 1. Stop the nolus service
 ```
