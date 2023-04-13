@@ -1,4 +1,4 @@
-## Nolus-rila Testnet SnapShot (13.04.23) - height - 1206000 - v0.2.2
+## Nolus-rila Testnet SnapShot (13.04.23) - height - 1831716 - v0.2.2
 ### How to install the snapshot (Instructions #1 - auto) - the snapshot archive updates every 24 hours
 
 ## Autoscript
